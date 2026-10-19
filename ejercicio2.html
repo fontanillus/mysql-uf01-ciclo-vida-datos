@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff9ed">
+    <meta name="description" content="Ejercicio práctico sobre el ciclo de vida de los datos en Rutas Eficientes S.A.">
+    <title>Ejercicio práctico 2 · Rutas Eficientes S.A.</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            background:
+                radial-gradient(ellipse at 8% 2%, rgba(255, 220, 130, .32), transparent 28rem),
+                #fffaf1;
+        }
+
+        .sun-rays {
+            background: repeating-conic-gradient(
+                from -10deg,
+                rgba(251, 191, 36, .13) 0deg 7deg,
+                transparent 7deg 15deg
+            );
+            mask-image: radial-gradient(circle, black 0%, transparent 68%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-stone-800 antialiased selection:bg-amber-200">
+    <main class="relative isolate mx-auto max-w-6xl overflow-hidden px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div aria-hidden="true" class="sun-rays pointer-events-none absolute -right-36 -top-44 -z-10 size-[28rem] rounded-full"></div>
+
+        <header class="mx-auto mb-9 max-w-3xl text-center sm:mb-12">
+            <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-200/80 bg-white/80 px-4 py-2 text-sm font-semibold text-amber-800 shadow-sm shadow-amber-900/5">
+                <span aria-hidden="true">☀️</span>
+                <span>Ejercicio práctico 2</span>
+            </div>
+            <h1 class="text-balance text-4xl font-black tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">
+                Rutas Eficientes <span class="text-amber-500">S.A.</span>
+            </h1>
+            <p class="mt-4 text-lg font-semibold text-stone-600 sm:text-xl">Datos en movimiento, entregas a tiempo</p>
+        </header>
+
+        <section aria-labelledby="enunciado-title" class="mx-auto mb-10 max-w-4xl sm:mb-14">
+            <div class="relative overflow-hidden rounded-3xl border border-amber-200/80 bg-white/90 p-6 shadow-lg shadow-amber-900/5 sm:p-8 lg:p-10">
+                <div aria-hidden="true" class="absolute -right-10 -top-12 size-40 rounded-full bg-amber-100/70 blur-2xl"></div>
+                <div class="relative">
+                    <div class="flex flex-wrap items-center gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-amber-100 text-xl" aria-hidden="true">🚚</span>
+                        <p class="text-xs font-bold uppercase tracking-[.18em] text-orange-600">El reto de la empresa</p>
+                    </div>
+                    <h2 id="enunciado-title" class="mt-5 text-2xl font-extrabold tracking-tight text-stone-900 sm:text-3xl">
+                        Mantener la cadena de frío y llegar a tiempo
+                    </h2>
+                    <p class="mt-4 text-base leading-7 text-stone-600 sm:text-lg sm:leading-8">
+                        Rutas Eficientes S.A. es una empresa de distribución de mercancías congeladas. Para garantizar que los productos no pierdan la cadena de frío y lleguen a tiempo, han sensorizado y digitalizado toda su flota de camiones.
+                    </p>
+                    <div class="mt-6 rounded-2xl bg-amber-50/90 p-4 sm:p-5">
+                        <p class="text-xs font-bold uppercase tracking-[.18em] text-orange-600">Instrucciones</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-700 sm:text-base">
+                            Relaciona cada una de las siguientes situaciones operativas con su fase del ciclo de vida de los datos correspondiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="casos-title">
+            <div class="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-[.18em] text-orange-600">De principio a fin</p>
+                    <h2 id="casos-title" class="mt-1 text-2xl font-extrabold tracking-tight text-stone-900 sm:text-3xl">
+                        Situaciones operativas
+                    </h2>
+                </div>
+                <p class="text-sm font-medium text-stone-500">7 momentos · 1 ciclo completo</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="group rounded-3xl border border-amber-200/80 bg-white p-5 shadow-sm shadow-amber-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-900/10 sm:p-6">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-amber-100 text-xl" aria-hidden="true">🧹</span>
+                        <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-800">CASO 1</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Procesar / transformar</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">El departamento de TI programa un script que detecta registros corruptos por interferencias en los túneles y elimina saltos térmicos imposibles, como una lectura de 90 °C dentro del congelador, antes de enviar los datos al servidor central.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-amber-800">Procesar / transformar</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> El script limpia y valida las lecturas para que los errores no afecten a los análisis ni a las decisiones posteriores.</p>
+                    </div>
+                </article>
+
+                <article class="group rounded-3xl border border-orange-200/80 bg-white p-5 shadow-sm shadow-orange-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-900/10 sm:p-6">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-orange-100 text-xl" aria-hidden="true">📡</span>
+                        <span class="rounded-full bg-orange-50 px-3 py-1 text-xs font-bold text-orange-800">CASO 2</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Capturar / recopilar</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">Cada 30 segundos, los sensores de temperatura y los GPS instalados en los camiones transmiten inalámbricamente la telemetría actual a las antenas de la central.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-orange-800">Capturar / recopilar</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> Los sensores y el GPS recopilan automáticamente información nueva sobre la temperatura y la ubicación de cada camión.</p>
+                    </div>
+                </article>
+
+                <article class="group rounded-3xl border border-yellow-200/80 bg-white p-5 shadow-sm shadow-yellow-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-yellow-900/10 sm:p-6">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-yellow-100 text-xl" aria-hidden="true">🗺️</span>
+                        <span class="rounded-full bg-yellow-50 px-3 py-1 text-xs font-bold text-yellow-800">CASO 3</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Analizar / usar</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">El algoritmo de la empresa cruza el histórico de tráfico, el clima y los tiempos de entrega para calcular rutas óptimas que reducen el consumo de combustible en un 15 %.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-yellow-800">Analizar / usar</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> El algoritmo combina varias fuentes de datos para encontrar rutas más eficientes y reducir el consumo de combustible.</p>
+                    </div>
+                </article>
+
+                <article class="group rounded-3xl border border-lime-200/80 bg-white p-5 shadow-sm shadow-lime-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-lime-900/10 sm:p-6">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-lime-100 text-xl" aria-hidden="true">🗄️</span>
+                        <span class="rounded-full bg-lime-50 px-3 py-1 text-xs font-bold text-lime-800">CASO 4</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Almacenar / organizar</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">Las lecturas validadas de los sensores se guardan de forma estructurada en una base de datos relacional segura, con redundancia en tres centros de datos.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-lime-800">Almacenar / organizar</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> La base de datos conserva las lecturas validadas de forma estructurada, segura y redundante para facilitar su consulta y protegerlas ante fallos.</p>
+                    </div>
+                </article>
+
+                <article class="group rounded-3xl border border-emerald-200/80 bg-white p-5 shadow-sm shadow-emerald-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-900/10 sm:p-6">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-emerald-100 text-xl" aria-hidden="true">🔐</span>
+                        <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-800">CASO 5</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Archivar / destruir</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">Al finalizar el contrato con un antiguo proveedor de sensores, la empresa tritura físicamente las tarjetas de memoria locales que contenían las claves de acceso de los dispositivos para evitar fugas de información.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-emerald-800">Archivar / destruir</p>
+                        <p class="mt-2 inline-flex rounded-lg bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">Acción concreta: destruir</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> Al triturar las tarjetas, la empresa destruye el soporte y evita que las claves puedan recuperarse o utilizarse sin autorización.</p>
+                    </div>
+                </article>
+
+                <article class="group rounded-3xl border border-sky-200/80 bg-white p-5 shadow-sm shadow-sky-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-900/10 sm:p-6">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-sky-100 text-xl" aria-hidden="true">📊</span>
+                        <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-800">CASO 6</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Compartir / visualizar</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">El equipo de operaciones visualiza una pantalla con un mapa de calor en tiempo real que muestra el estado de las entregas a los principales supermercados asociados.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-sky-800">Compartir / visualizar</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> El mapa de calor presenta la información visualmente para que el equipo pueda interpretar rápidamente el estado de las entregas.</p>
+                    </div>
+                </article>
+
+                <article class="group rounded-3xl border border-rose-200/80 bg-white p-5 shadow-sm shadow-rose-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-900/10 sm:p-6 lg:col-start-2">
+                    <div class="flex items-start justify-between gap-3">
+                        <span class="grid size-11 place-items-center rounded-2xl bg-rose-100 text-xl" aria-hidden="true">📦</span>
+                        <span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold text-rose-800">CASO 7</span>
+                    </div>
+                    <h3 class="mt-5 text-xl font-extrabold text-stone-900">Archivar / destruir</h3>
+                    <p class="mt-2 text-sm leading-6 text-stone-600">Los datos de rutas de 2021 se trasladan desde los servidores principales de acceso rápido a cintas magnéticas de bajo coste, desconectadas de internet, para consultarlos solo en caso de una auditoría legal.</p>
+                    <div class="mt-5 border-t border-stone-100 pt-4">
+                        <p class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Fase</p>
+                        <p class="mt-1 text-sm font-bold text-rose-800">Archivar / destruir</p>
+                        <p class="mt-2 inline-flex rounded-lg bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-700">Acción concreta: archivar</p>
+                        <p class="mt-2 text-sm leading-6 text-stone-500"><span class="font-semibold text-stone-600">Justificación:</span> Los datos se trasladan a un soporte de menor coste y se conservan sin uso habitual para consultarlos si una auditoría lo requiere.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="mt-8 rounded-2xl border border-amber-200/70 bg-amber-50/80 px-5 py-4 text-center sm:mt-10">
+            <p class="text-sm leading-6 text-amber-950">
+                <span aria-hidden="true">✨</span>
+                Datos bien gestionados: productos congelados, rutas eficientes y entregas a tiempo.
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
